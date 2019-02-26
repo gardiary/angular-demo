@@ -1,0 +1,24 @@
+{
+    "label.age": "Age",
+    "label.birthdate": "Birth Date",
+    "label.email": "Email",
+    "label.firstname": "First Name",
+    "label.gender": "Gender",
+    "label.lastname": "Last Name",
+    "label.married": "Married",
+    "label.name": "Name",
+    "label.picture": "Picture",
+    "label.save": "Save",
+    
+    "label.list.of.customers": "List of Customers",
+    "label.list.of.heroes": "List of Heroes",
+    "label.list.of.recipes": "List of Recipes",
+    
+    "label.new.customer": "New Customer",
+    "label.new.hero": "New Hero",
+    "label.new.recipe": "New Recipe",
+
+    "label.add.customer": "Add Customer",
+    "label.add.hero": "Add Hero",
+    "label.add.recipe": "Add Recipe"
+}

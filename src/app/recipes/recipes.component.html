@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-md-8">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title><h3>{{ 'label.list.of.recipes' | translate }}</h3></mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="table-responsive">
+          <table class="table table-sm table-striped table-hover table-bordered">
+            <thead class="thead-dark">
+              <tr>
+                <th class="">#</th>
+                <th class="">ID</th>
+                <th class="">{{ 'label.name' | translate }}</th>
+                <th class="">{{ 'label.picture' | translate }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let recipe of recipes; let i = index">
+                <td>{{i + 1}}</td>
+                <td>{{recipe.id}}</td>
+                <td>{{recipe.name}}</td>
+                <td>{{recipe.picture}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--div class="list-button-container">
+          <button mat-raised-button color="primary">{{ 'label.new.recipe' | translate }}</button>
+        </div-->
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" routerLink="/recipe/new">
+          <mat-icon>add_box</mat-icon> {{ 'label.add.recipe' | translate }}
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

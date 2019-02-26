@@ -1,0 +1,24 @@
+{
+    "label.age": "Umur",
+    "label.birthdate": "Tanggal Lahir",
+    "label.email": "Surel",
+    "label.firstname": "Nama Depan",
+    "label.gender": "Jenis Kelamin",
+    "label.lastname": "Nama Belakang",
+    "label.married": "Menikah",
+    "label.name": "Nama",
+    "label.picture": "Gambar",
+    "label.save": "Simpan",
+    
+    "label.list.of.customers": "Daftar Pelanggan",
+    "label.list.of.heroes": "Daftar Pahlawan",
+    "label.list.of.recipes": "Daftar Resep",
+
+    "label.new.customer": "Pelanggan Baru",
+    "label.new.hero": "Pahlawan Baru",
+    "label.new.recipe": "Resep Baru",
+
+    "label.add.customer": "Tambah Pelanggan",
+    "label.add.hero": "Tambah Pahlawan",
+    "label.add.recipe": "Tambah Resep"
+}

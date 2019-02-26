@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-md-6">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title><h3>{{ 'label.list.of.heroes' | translate }}</h3></mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="table-responsive">
+          <table class="table table-sm table-striped table-hover table-bordered">
+            <thead class="thead-dark">
+              <tr>
+                <th class="">#</th>
+                <th class="">ID</th>
+                <th class="">{{ 'label.name' | translate }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let hero of heroes; let i = index">
+                <td>{{i + 1}}</td>
+                <td>{{hero.id}}</td>
+                <td>{{hero.name}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--div class="list-button-container">
+          <button mat-raised-button color="primary">{{ 'label.new.hero' | translate }}</button>
+        </div-->
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" routerLink="/hero/new">
+          <mat-icon>add_box</mat-icon> {{ 'label.add.hero' | translate }}
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

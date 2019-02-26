@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title><h3>{{ 'label.new.customer' | translate }}</h3></mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="row">
+            <mat-form-field class="col">
+              <input matInput placeholder="{{ 'label.firstname' | translate }}">
+            </mat-form-field>
+          </div>
+          <div class="row">
+            <mat-form-field class="col">
+              <input matInput placeholder="{{ 'label.lastname' | translate }}">
+            </mat-form-field>
+          </div>
+          <div class="row">
+            <mat-form-field class="col">
+              <input matInput placeholder="{{ 'label.birthdate' | translate }}">
+            </mat-form-field>
+          </div>
+          <div class="row">
+            <mat-form-field class="col">
+              <!--input matInput placeholder="{{ 'label.gender' | translate }}"-->
+              <mat-select placeholder="{{ 'label.gender' | translate }}">
+                <!--mat-option [value]="MALE">MALE</mat-option>
+                <mat-option [value]="FEMALE">FEMALE</mat-option-->
+                <mat-option *ngFor="let gender of genders" [value]="gender.value">
+                  {{gender.text}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="row">
+            <mat-form-field class="col">
+              <input matInput placeholder="{{ 'label.married' | translate }}">
+            </mat-form-field>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" routerLink="/customer/new">
+            <mat-icon>save</mat-icon> {{ 'label.save' | translate }}
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+
+  
+
+  <!--mat-form-field>
+    <textarea matInput placeholder="Textarea"></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="Select">
+      <mat-option value="option">Option</mat-option>
+    </mat-select>
+  </mat-form-field-->
+</div>

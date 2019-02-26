@@ -1,0 +1,36 @@
+.app-content {
+    margin: 20px;
+}
+
+button {
+    outline: none;
+}
+
+.menu-link a, .menu-link button {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.toolbar-filler {
+    flex: 1 1 auto;
+}
+
+.sidenav-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.sidenav-main {
+    min-width: 250px;
+}
+
+.select-language {
+    margin: 0 0 0 4px;
+    width: 40px;
+    font-size: 14px;
+    /*margin: 0 0 0 20px;
+    font-size: 14px;*/
+}

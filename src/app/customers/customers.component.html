@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="col-md-10">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title><h3>{{ 'label.list.of.customers' | translate }}</h3></mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="table-responsive">
+          <table class="table table-sm table-striped table-hover table-bordered">
+            <thead class="thead-dark">
+              <tr>
+                <th class="">#</th>
+                <th class="">ID</th>
+                <th class="">{{ 'label.firstname' | translate }}</th>
+                <th class="">{{ 'label.lastname' | translate }}</th>
+                <th class="">{{ 'label.gender' | translate }}</th>
+                <th class="">{{ 'label.birthdate' | translate }}</th>
+                <th class="">{{ 'label.age' | translate }}</th>
+                <th class="">{{ 'label.married' | translate }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let customer of customers; let i = index">
+                <td>{{i + 1}}</td>
+                <td>{{customer.id}}</td>
+                <td>{{customer.firstName}}</td>
+                <td>{{customer.lastName}}</td>
+                <td>{{customer.gender}}</td>
+                <td>{{customer.birthDate}}</td>
+                <td>{{customer.age}}</td>
+                <td><mat-checkbox [(ngModel)]="customer.married" [disabled]="true"></mat-checkbox><!--<mat-checkbox [(ngModel)]="customer.married"></mat-checkbox>--></td>
+                <!--td [ngSwitch]="customer.married">
+                    <span *ngSwitchCase="true">YES</span>
+                    <span *ngSwitchDefault>NO</span>
+                </td-->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--div class="list-button-container">
+          <button mat-raised-button color="primary" routerLink="/customer/new">
+            <mat-icon>add_box</mat-icon> New Customer
+          </button>
+        </div-->
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" routerLink="/customer/new">
+          <mat-icon>add_box</mat-icon> {{ 'label.add.customer' | translate }}
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
